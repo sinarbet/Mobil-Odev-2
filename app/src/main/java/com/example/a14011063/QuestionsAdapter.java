@@ -40,7 +40,7 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.MyVi
         Question selectedPerson=questions.get(position);
 
         holder.question.setText(position+1 +"-)"+selectedPerson.question);
-        holder.answers.setText("A-)"+selectedPerson.answers.get(0)+"\nB-)"+selectedPerson.answers.get(1)+"\nC-)"+selectedPerson.answers.get(2)+"\nD-)"+selectedPerson.answers.get(3)+"\nE-)"+selectedPerson.answers.get(4)+"\nCorrect Answer:"+selectedPerson.correctAnswer);
+        holder.answers.setText("A-)"+selectedPerson.answers.get(0)+"\nB-)"+selectedPerson.answers.get(1)+"\nC-)"+selectedPerson.answers.get(2)+"\nD-)"+selectedPerson.answers.get(3)+"\nE-)"+selectedPerson.answers.get(4));
         holder.satirCard.setOnClickListener(v -> {
             Intent intent = new Intent(context, DetailActivity.class);
             intent.putExtra("Question",selectedPerson.question);

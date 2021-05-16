@@ -73,15 +73,9 @@ public class SignUpActivity extends AppCompatActivity {
             else if(password.compareTo(password2) != 0){
                 Toast.makeText(this,"Passwords are incompatible",Toast.LENGTH_SHORT).show();
             }
-            else if(phoneNum.length()<15){
-                Toast.makeText(this,"Phone number is missing",Toast.LENGTH_SHORT).show();
-            }
             else{
-
                 User user = new User(name,surname,phoneNum,mail,password,password2,path,0);
                 users.add(user);
-                System.out.println("New User: " +users.get(3).userName);
-
                 Toast.makeText(this,"Successfully create account",Toast.LENGTH_SHORT).show();
                 Intent intent2 = new Intent(this, MainActivity.class);
                 startActivity(intent2);
