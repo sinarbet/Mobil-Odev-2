@@ -42,7 +42,7 @@ public class ExamAdapter extends RecyclerView.Adapter<ExamAdapter.MyViewHolder> 
         Question selected=examQuestions.get(position);
         Random rand = new Random();
         int question_num =Integer.parseInt(selected.choiceNum);
-        holder.exam_question.setText(position+1+"-)"+selected.question);
+        holder.exam_question.setText(position+1+"-) "+selected.question);
         int i=0;
         holder.exam_answers.setText("Answers:");
 

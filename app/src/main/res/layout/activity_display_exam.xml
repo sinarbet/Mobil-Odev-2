@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="321dp"
         android:layout_marginEnd="35dp"
-        android:backgroundTint="#698291"
+        android:backgroundTint="#BC2000"
         app:layout_constraintBottom_toTopOf="@+id/rvExam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
