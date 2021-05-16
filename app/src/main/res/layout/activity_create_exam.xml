@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FF1744"
+    tools:context=".AddQuestionActivity">
+
+    <EditText
+        android:id="@+id/questionExamEditText"
+        android:layout_width="363dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Question"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonEnd"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="40dp"
+        android:text="End Exam"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonNext"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow"
+        app:layout_constraintVertical_bias="0.727" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tableRow"
+        android:layout_width="352dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionExamEditText">
+
+        <EditText
+            android:id="@+id/editTextExamAnswer1"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:ems="10"
+            android:hint="Answer-1"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/editTextExamAnswer2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextExamAnswer2"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:ems="10"
+            android:hint="Answer-2"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/editTextExamAnswer3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextExamAnswer1" />
+
+        <EditText
+            android:id="@+id/editTextExamAnswer3"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:ems="10"
+            android:hint="Answer-3"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/editTextExamAnswer4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextExamAnswer2" />
+
+        <EditText
+            android:id="@+id/editTextExamAnswer4"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:ems="10"
+            android:hint="Answer-4"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/editTextExamAnswer5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextExamAnswer3" />
+
+        <EditText
+            android:id="@+id/editTextExamAnswer5"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:ems="10"
+            android:hint="Answer-5"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextExamAnswer4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/imageButtonExamShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonEnd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_share" />
+
+    <ImageButton
+        android:id="@+id/imageButtonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#FF1744"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_media_next" />
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="56dp"
+        android:background="#852D2D"
+        android:text="A"
+        app:layout_constraintEnd_toStartOf="@+id/tableRow"
+        app:layout_constraintTop_toBottomOf="@+id/questionExamEditText" />
+
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:text="B"
+        app:layout_constraintEnd_toStartOf="@+id/tableRow"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonA" />
+
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:text="C"
+        app:layout_constraintEnd_toStartOf="@+id/tableRow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonB" />
+
+    <Button
+        android:id="@+id/buttonD"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:text="D"
+        app:layout_constraintEnd_toStartOf="@+id/tableRow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonC" />
+
+    <Button
+        android:id="@+id/buttonE"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:text="E"
+        app:layout_constraintEnd_toStartOf="@+id/tableRow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonD" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

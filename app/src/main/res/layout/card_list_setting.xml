@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardSetting"
+        android:layout_width="330dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="468dp"
+        app:cardBackgroundColor="#4FFF9E80"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4FFF9E80">
+
+            <TextView
+                android:id="@+id/textViewDuration"
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:text="Exam Duration"
+                app:layout_constraintBottom_toTopOf="@+id/textViewDifficulty"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.297"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewDifficulty"
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginBottom="21dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toTopOf="@+id/textViewGrade"
+                app:layout_constraintEnd_toStartOf="@+id/buttonUse"
+                app:layout_constraintHorizontal_bias="0.686"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDuration"
+                app:layout_constraintVertical_bias="0.818" />
+
+            <TextView
+                android:id="@+id/textViewGrade"
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.297"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDifficulty" />
+
+            <Button
+                android:id="@+id/buttonUse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="94dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginBottom="75dp"
+                android:backgroundTint="#FF8A80"
+                android:text="USE"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

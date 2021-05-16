@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".project.view.ui.DetailActivity">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextDetailQuestion"
+        android:layout_width="376dp"
+        android:layout_height="126dp"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:hint="Question"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDetailAnswer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextDetailAnswer1"
+        android:layout_width="302dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:hint="Answer1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDetailAnswer2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDetailQuestion" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextDetailAnswer2"
+        android:layout_width="302dp"
+        android:layout_height="66dp"
+        android:hint="Answer2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDetailAnswer3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDetailAnswer1" />
+
+    <Button
+        android:id="@+id/buttonHeader"
+        android:layout_width="269dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#FF5722"
+        android:text="Update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+
+    <EditText
+        android:id="@+id/editTextDetailAnswer3"
+        android:layout_width="302dp"
+        android:layout_height="66dp"
+        android:ems="10"
+        android:hint="Answer3"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDetailAnswer2" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="302dp"
+        android:layout_height="66dp"
+        android:ems="10"
+        android:hint="Answer4"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDetailAnswer3" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="302dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:hint="Answer5"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
